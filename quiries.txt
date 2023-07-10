@@ -1,0 +1,50 @@
+ value insertion of order table:
+ insert into orders values(4550,'2022-06-24',1,125,1002);
+ insert into orders values(4551,'2022-06-25',3,340.00,1006);
+ insert into orders values(4552,'2022-06-27',6,666.00,1009);
+
+value insertion of food table:
+ insert into food values(101,"Veg Soya Tikka",111.00,4552);
+ insert into food values(102,"KFC Chaap",149.00,4540); 
+ insert into food values(103,"Chicken Sandwich",180.03,4541);
+ insert into food values(104,"Paneer Butter Masala",110.00,4545);
+ insert into food values(105,"Italian Cheese Cake",125.00,4550);
+ insert into food values(106,"Roll with Wallnuts",180.03,4551);
+ insert into food values(107,"South Indian Thali",70.00,4542);
+ insert into food values(108,"Noodle Soup",139.03,4549);
+ insert into food values(109,"Smoked Mushroom",125.00,4543);
+ insert into food values(110,"Veg Manchurian",100.00,4548);
+ insert into food values(111,"Veg Hot Soup",75.00,4546);
+ insert into food values(112,"Schezwan fried rice",210.10,4544);
+ insert into food values(113,"Mixed Hakka Noodles",200.00,4547);
+
+ delivery data:
+ insert into delivery values(1,"mysuru",'12:30:00','10:20:00',4545);
+ insert into delivery values(2,"mandya",'01:30:00','11:20:00',4540);
+ insert into delivery values(3,"Belgavi",'02:00:00','12:20:00',4541);
+ insert into delivery values(4,"Hubli",'02:30:30','11:05:00',4543);
+ insert into delivery values(5,"Udupi",'04:30:30','01:50:00',4544);
+ insert into delivery values(6,"Manglore",'03:30:30','02:50:00',4547);
+ insert into delivery values(7,"Hassan",'12:30:30','10:50:00',4548);
+ insert into delivery values(8,"Hubli",'4:30:30','2:25:00',4551);
+
+
+update quiries:
+ update orders set order_placed="success" where order_id=4540;
+ update orders set order_placed="success" where order_id=4541;
+ update orders set order_placed="failed" where order_id=4542;
+ update orders set order_placed="success" where order_id=4543;
+ update orders set order_placed="success" where order_id=4544;
+ update orders set order_placed="success" where order_id=4545;
+ update orders set order_placed="pending" where order_id=4546;
+ update orders set order_placed="success" where order_id=4547;
+ update orders set order_placed="success" where order_id=4548;
+ update orders set order_placed="failed" where order_id=4549;
+ update orders set order_placed="pending" where order_id=4550;
+ update orders set order_placed="success" where order_id=4551;
+ update orders set order_placed="pending" where order_id=4552;
+
+adding column:
+ alter table food add column rt_id int(10) not null;
+
+
